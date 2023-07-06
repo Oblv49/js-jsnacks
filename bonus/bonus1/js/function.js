@@ -24,20 +24,22 @@ function generatereRandomArray(numbersOfElements, minInterval, maxInterval) {
 
 //cerca e compare due array
 function searchInArray(array, elementToSearch) {
-
+    
     let numeriTrovati = [];
-
+  
     for (let i = 0; i < array.length; i++) {
-        if (elementToSearch[i] == array[i]) {
-            numeriTrovati.push(elementToSearch)
+      
+        if (elementToSearch.includes(array[i])) {
+            
+            numeriTrovati.push(array[i]);
+        
         }
+        
     }
-    
-    console.log("nessun numero vincente.");
+  
     return numeriTrovati;
-    
+  
 }
-
 
 //controllo se dei numeri si trovano dentro un determinato range
 function controllNumberRange(number, minInterval, maxInterval) {

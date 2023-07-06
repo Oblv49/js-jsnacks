@@ -9,14 +9,14 @@
 
 
 
-let numeriVincenti = generatereRandomArray(6, 1, 90);
+let numeriVincenti = generatereRandomArray(6, 1, 10);
 let numeriUtenteArray = [];
-let trovato;
+let numeriTrovati = [];
 
 for (let i = 0; i < 6; i++) {
 
-  let numeroUtente = parseInt(prompt("Inserisci un numero tra 1 e 90: "));
-  if (controllNumberRange(numeroUtente, 1, 90)) {
+  let numeroUtente = parseInt(prompt("Inserisci un numero tra 1 e 10: "));
+  if (controllNumberRange(numeroUtente, 1, 10)) {
 
     if (!numeriUtenteArray.includes(numeroUtente)) {
 
@@ -44,7 +44,7 @@ for (let i = 0; i < 6; i++) {
 
   }
 
-  let trovato = searchInArray(numeriVincenti, numeriUtenteArray);
+  numeriTrovati = searchInArray(numeriVincenti, numeriUtenteArray);
 
 
 
@@ -53,7 +53,7 @@ for (let i = 0; i < 6; i++) {
 //numeri random dom
 for (let i = 0; i < numeriVincenti.length; i++) {
 
-  let color = 'bg-success';
+  let color = 'bg-light';
 
   document.getElementById("numbersRandomContainer").innerHTML += `
       <div class="square rounded-circle ${color}">
@@ -67,8 +67,8 @@ for (let i = 0; i < numeriVincenti.length; i++) {
 
 //numeri utente dom
 for (let i = 0; i < numeriUtenteArray.length; i++) {
-
-  let color = 'bg-light';
+  let numeroCorrente = numeriUtenteArray[i];
+  let color = numeriVincenti.includes(numeroCorrente) ? 'bg-success' : 'bg-light';
 
   document.getElementById("numbersUserContainer").innerHTML += `
       <div class="square mb-5 rounded-circle ${color}">
@@ -81,15 +81,14 @@ for (let i = 0; i < numeriUtenteArray.length; i++) {
 }
 
 
-
+//stampa a console 
 console.log("numeri random " + numeriVincenti);
 console.log("numeri utente " + numeriUtenteArray);
-
-console.log("numeri trovati: " + trovato);
+console.log("numeri trovati: " + numeriTrovati);
 
 
 //card fizz
-for (let i = 1; i <= 90; i++) {
+for (let i = 1; i <= 10; i++) {
 
   let color = numeriVincenti.includes(i) ? 'bg-success' : 'bg-light';
 
