@@ -13,12 +13,3 @@ function countElement(array, elementToFind) {
     return count;
 }
 
-function arrayStringToInt(arrayString, arrayNumbersInt) {
-    
-    for(let i = 0; i < arrayString.length; i++){
-        
-        arrayNumbersInt.push(parseInt(arrayString[i]));
-    
-    }
-
-}
