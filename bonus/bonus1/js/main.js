@@ -68,7 +68,7 @@ for (let i = 0; i < numeriVincenti.length; i++) {
 //numeri utente dom
 for (let i = 0; i < numeriUtenteArray.length; i++) {
   let numeroCorrente = numeriUtenteArray[i];
-  let color = numeriVincenti.includes(numeroCorrente) ? 'bg-success' : 'bg-light';
+  let color = numeriTrovati.includes(numeroCorrente) ? 'bg-success' : 'bg-light';
 
   document.getElementById("numbersUserContainer").innerHTML += `
       <div class="square mb-5 rounded-circle ${color}">
