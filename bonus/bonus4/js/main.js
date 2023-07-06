@@ -24,7 +24,7 @@ console.log("La parola invertita è: " + arrayWordInverted);
 let isPalindrome = compareArray(arrayWord, arrayWordInverted);
 
 if (isPalindrome) {
-  console.log("La parola è palindroma!");
+  document.getElementById("palidromeParagraph").innerHTML = `La parola inserita: ${word} è palindroma!`;
 } else {
-  console.log("La parola non è palindroma!");
-}
+  document.getElementById("palidromeParagraph").innerHTML = `La parola inserita: ${word} non è palindroma!`;
+}  
