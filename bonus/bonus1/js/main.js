@@ -9,14 +9,14 @@
 
 
 
-let numeriVincenti = generatereRandomArray(6, 1, 10);
+let numeriVincenti = generatereRandomArray(6, 1, 90);
 let numeriUtenteArray = [];
 let numeriTrovati = [];
 
 for (let i = 0; i < 6; i++) {
 
-  let numeroUtente = parseInt(prompt("Inserisci un numero tra 1 e 10: "));
-  if (controllNumberRange(numeroUtente, 1, 10)) {
+  let numeroUtente = parseInt(prompt("Inserisci un numero tra 1 e 90: "));
+  if (controllNumberRange(numeroUtente, 1, 90)) {
 
     if (!numeriUtenteArray.includes(numeroUtente)) {
 
@@ -68,7 +68,7 @@ for (let i = 0; i < numeriVincenti.length; i++) {
 //numeri utente dom
 for (let i = 0; i < numeriUtenteArray.length; i++) {
   let numeroCorrente = numeriUtenteArray[i];
-  let color = numeriTrovati.includes(numeroCorrente) ? 'bg-success' : 'bg-light';
+  let color = numeriTrovati.includes(numeroCorrente) ? 'bg-success' : 'bg-danger';
 
   document.getElementById("numbersUserContainer").innerHTML += `
       <div class="square mb-5 rounded-circle ${color}">
@@ -88,7 +88,7 @@ console.log("numeri trovati: " + numeriTrovati);
 
 
 //card fizz
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 90; i++) {
 
   let color = numeriVincenti.includes(i) ? 'bg-success' : 'bg-light';
 
