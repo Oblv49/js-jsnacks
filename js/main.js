@@ -14,10 +14,10 @@
 
 let arrayNumber = [];
 
-let lengthArray = parseInt(prompt("Inserisci quanti numeri vuoi inserire: "));
+let lengthArray = parseInt(prompt("Inserisci quanti voti hai preso: "));
 
 for (let i = 0; i < lengthArray; i++) {
-    let numberUser = parseInt(prompt("Inserisci un numero: "))
+    let numberUser = parseInt(prompt("Inserisci un voto: "))
     arrayNumber.push(numberUser);
 }
 //controllo creazione array da prompt utenti 
@@ -25,8 +25,9 @@ console.log(arrayNumber);
 
 let sommaArrayNumber = sommaNumeri(arrayNumber);
 
-console.log("La somma dei numeri inseriti è: " + sommaArrayNumber);
+console.log("La somma dei voti inseriti è: " + sommaArrayNumber);
 
 
+let media = mediaAritmetica(sommaArrayNumber, lengthArray);
 
-//------------------ function -----------------
+console.log("La media aritmetica dei tuoi voti è: " + media.toFixed(2));

@@ -10,3 +10,10 @@ function sommaNumeri(array) {
 
     return somma;
 }
+
+function mediaAritmetica(somma, numberOfNumbers) {
+   
+    let media = somma / numberOfNumbers;
+    return media;
+
+}
