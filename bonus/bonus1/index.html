@@ -16,33 +16,42 @@
 
 <body class="bg-dark-blue">
 
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
                 <p class="text-white text-center fw-bold myFontSize mb-0">Lotteria Pazza!</p>
-                <p class="text-white text-center fw-bold fs-4 mt-0">MONTEPREMI: <span
-                        class="text-danger">1.000.000€</span></p>
+                <p class="text-white text-center fw-bold fs-3 mt-0">------------- MONTEPREMI: <span
+                        class="text-danger">1.000.000€</span> -------------</p>
             </div>
         </div>
 
 
+        <!--contenitore errore numeri ripetuti-->
+        <div class="row d-none w-75 m-auto" id="errorNumbersRipetition">
+            <div class="col-12">
+                <p class="text-center text-white myFontSize bg-danger">Non puoi giocare due volte lo stesso numero!</p>
+            </div>
+        </div>
+
+        <!--contenitore errore numeri oltre il range-->
         <div class="row d-none w-75 m-auto" id="errorNumbers">
             <div class="col-12">
-                <p class="text-center text-white myFontSize bg-danger">Inserisci SOLO numeri tra 1 e 90!</p>
+                <p class="text-center text-white myFontSize bg-danger">Puoi scegliere solo numeri tra 1 e 90!</p>
             </div>
         </div>
-       
+
         <!--contenitore numeri random-->
-        <div class="row w-75 m-auto" id="numbersRandomContainer">
+        <div class="container-squares-flex w-75 m-auto" id="numbersRandomContainer">
             <div class="col-12">
-                <p class="text-center text-white fs-4" id="numbersRandom"></p>
+                <p class="text-center text-white fs-4" id="numbersRandom">I NUMERI VINCENTI SONO:</p>
             </div>
         </div>
-        
+
         <!--contenitore numeri utente-->
-        <div class="row w-75 m-auto">
+        <div class="container-squares-flex w-75 m-auto" id="numbersUserContainer">
             <div class="col-12">
-                <p class="text-center text-white fs-4" id="numbersUser"></p>
+                <p class="text-center text-white fs-4 mt-3" id="numbersUser">I Tuoi Numeri Sono:</p>
             </div>
         </div>
 
