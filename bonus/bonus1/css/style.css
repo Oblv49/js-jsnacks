@@ -1,0 +1,44 @@
+.bg-dark-blue {
+    background-color: #083b4c;
+}
+
+.square {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.vertical-align-square {
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+.container-squares-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bg_red {
+    background-color: red;
+}
+
+.bg_green {
+    background-color: #00da9d;
+}
+
+.bg_yellow {
+    background-color: #ffd04e;
+}
+
+.bg_blueForCard {
+    background-color: #008bb6;
+}
+
+.myFontSize {
+    font-size: 100px;
+}
+
+.myFontSize200 {
+    font-size: 200px;
+}
