@@ -22,3 +22,11 @@ for (let i = 0; i < lengthArray; i++) {
 }
 //controllo creazione array da prompt utenti 
 console.log(arrayNumber);
+
+let sommaArrayNumber = sommaNumeri(arrayNumber);
+
+console.log("La somma dei numeri inseriti è: " + sommaArrayNumber);
+
+
+
+//------------------ function -----------------
